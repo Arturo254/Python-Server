@@ -27,3 +27,34 @@ O alguna herramienta parecida
 
 El funcionamiento de la herramienta es igual tanto
 En linux como en termux
+
+# INSTALACIÓN
+
+
+```
+
+git clone https://github.com/Arturo254/Python-Server
+
+cd Python-Server
+
+chmod 777 *
+
+bash install.sh
+
+``` 
+
+
+# USO 
+```
+pyserver 
+
+``` 
+
+# Disclaimer 
+
+El uso de esta herramienta es 100% de uso educativo
+Como todas las herramientas que se alojan en mi
+Repositorio de github
+
+No me hago responsable de su mal uso
+O como lo uses tu. 
