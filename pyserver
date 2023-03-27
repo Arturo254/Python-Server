@@ -35,7 +35,7 @@ _____________________________________________________
 
 
 
-echo -e "\e[1;33mINGRESA LA SIGUIENTE DIRECCION IP EN TU NAVEGADOT :"
+echo -e "\e[1;33mINGRESA LA SIGUIENTE DIRECCION IP EN TU NAVEGADOR :"
 
 
 echo -e "\e[31m "
