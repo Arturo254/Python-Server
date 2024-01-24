@@ -40,13 +40,12 @@ echo -e "\e[1;33mINGRESA LA SIGUIENTE DIRECCION IP EN TU NAVEGADOR :"
 
 echo -e "\e[31m "
 
-ifconfig | grep "inet " | awk '{print $2}' | grep 192.168 
+ifconfig > /dev/null 2>&1 | grep "inet " | awk '{print $2}' | grep 192.168
 
 echo -e "\e[34mAGREGANDO EL PUERTO : "
 
 echo -e "\e[1;36m 8080"
 
-echo -e "\e[32mEJEMPLO : 192.168.0.66:8080" 
 
 
 echo -e "\e[1;34m CONEXIONES ACTIVAS : "
