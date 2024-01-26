@@ -8,6 +8,7 @@ Crea un servirdor local usando python
 ![1000090654](https://github.com/Arturo254/Python-Server/assets/87346871/0c457648-6dfa-43f8-9a64-750cbb39ef84)
 
 
+
 # IMPORTANTE
 
 para que el servidor funcione debes ejecutar el comando
@@ -56,11 +57,13 @@ pyserver
 
 # DOCUMENTACIÓN 
 
+#
+> **Warning**
+>  Advertencia http.server is not recommended for production. It only implements basic security checks.
+
+#
+
 Este módulo define clases para implementar servidores HTTP.
-
-> [!CAUTION]
-> Advertencia http.server is not recommended for production. It only implements basic security checks.
-
 
 Una clase, HTTPServer, es una subclase socketserver.TCPServer. Crea y escucha en el socket HTTP, enviando las peticiones a un handler. El código para crear y ejecutar el servidor se ve así:
 
