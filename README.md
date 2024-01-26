@@ -302,25 +302,4 @@ do_POST()
 Este método sirve para el tipo de petición 'POST', sólo permitido para scripts CGI. El error 501, «Can only POST to CGI scripts», se produce cuando se intenta enviar a una url no CGI.
 
 Tenga en cuenta que los scripts CGI se ejecutarán con UID de usuario nobody, por razones de seguridad. Los problemas con el script CGI serán traducidos al error 403.
-
-CGIHTTPRequestHandler puede ser activado en la línea de comandos pasando la opción --cgi:
-
-python -m http.server --cgi
-Security Considerations
-SimpleHTTPRequestHandler will follow symbolic links when handling requests, this makes it possible for files outside of the specified directory to be served.
-
-Earlier versions of Python did not scrub control characters from the log messages emitted to stderr from python -m http.server or the default BaseHTTPRequestHandler .log_message implementation. This could allow remote clients connecting to your server to send nefarious control codes to your terminal.
-
-Nuevo en la versión 3.10.9: Control characters are scrubbed in stderr logs.
-
-© Copyright 2001-2023, Python Software Foundation.
-This page is licensed under the Python Software Foundation License Version 2.
-Examples, recipes, and other code in the documentation are additionally licensed under the Zero Clause BSD License.
-See History and License for more information.
-
-La Python Software Foundation es una organización sin fines de lucro. Por favor, haga una donación.
-
-Última actualización el nov 14, 2023. Found a bug?
-Created using Sphinx 3.4.3.
-
  
